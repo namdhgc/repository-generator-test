@@ -29,10 +29,10 @@ class AdminServiceProvider extends ServiceProvider
             __DIR__.'/stubs' => base_path('resources/stubs/'),
         ], "repositiry-generator");
 
-        if ($this->app->runningInConsole()) {
-            $this->commands([
-                RepositoryGenerator::class,
-             ]);
-        }
+        // if ($this->app->runningInConsole()) {
+        //     $this->commands([
+        //         RepositoryGenerator::class,
+        //      ]);
+        // }
     }
 }
