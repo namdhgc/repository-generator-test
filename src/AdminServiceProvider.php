@@ -24,8 +24,14 @@ class AdminServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__.'/command' => base_path('app/Console/Command/'),
+            __DIR__.'/command' => app_path('app/Console/Command/'),
             __DIR__.'/stubs' => base_path('resources/stubs/'),
         ], "repositiry-generator");
+
+        if ($this->app->runningInConsole()) {
+            $this->commands([
+                RepositoryGenerator::class,
+             ]);
+        }
     }
 }
