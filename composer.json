@@ -1,5 +1,5 @@
 {
-    "name": "scuti/repository-generator",
+    "name": "namdhgc/repository-generator",
     "description": "Package allow us to create Repository layer",
     "type": "library",
     "license": "MIT",
@@ -12,16 +12,16 @@
     "require": {},
     "autoload": {
         "psr-4": {
-            "Scuti\\Admin\\RepositoryGenerator\\": "src/"
+            "Namdhgc\\Admin\\RepositoryGenerator\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Scuti\\Admin\\RepositoryGenerator\\AdminServiceProvider"
+                "Namdhgc\\Admin\\RepositoryGenerator\\AdminServiceProvider"
             ],
             "aliases": {
-                "ScutiRepositoryGenerator": "Scuti\\Admin\\RepositoryGenerator\\AdminServiceProvider"
+                "NamdhgcRepositoryGenerator": "Namdhgc\\Admin\\RepositoryGenerator\\AdminServiceProvider"
             }
         }
     },
