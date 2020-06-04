@@ -1,6 +1,6 @@
 <?php
 
-namespace Namdhgc\Admin\RepositoryRegenator;
+namespace Namdhgc\Admin\RepositoryGegenator;
 
 use Illuminate\Support\ServiceProvider;
 
