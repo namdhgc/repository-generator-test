@@ -27,5 +27,11 @@ class AdminServiceProvider extends ServiceProvider
             __DIR__.'/command' => base_path('app/Console/Command/'),
             __DIR__.'/stubs' => base_path('resources/stubs/'),
         ], "repositiry-generator");
+
+        if ($this->app->runningInConsole()) {
+            $this->commands([
+                RepositoryGenerator::class,
+             ]);
+        }
     }
 }
