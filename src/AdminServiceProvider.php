@@ -3,7 +3,6 @@
 namespace Namdhgc\Admin\RepositoryGenerator;
 
 use Illuminate\Support\ServiceProvider;
-use Namdhgc\Admin\Commands\RepositoryGenerator;
 
 class AdminServiceProvider extends ServiceProvider
 {
@@ -28,11 +27,5 @@ class AdminServiceProvider extends ServiceProvider
             __DIR__.'/commands' => base_path('app/Console/Commands/'),
             __DIR__.'/stubs' => base_path('resources/stubs/'),
         ], "repositiry-generator");
-
-        // if ($this->app->runningInConsole()) {
-        //     $this->commands([
-        //         RepositoryGenerator::class,
-        //      ]);
-        // }
     }
 }
