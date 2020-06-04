@@ -3,7 +3,7 @@
 namespace Namdhgc\Admin\RepositoryGenerator;
 
 use Illuminate\Support\ServiceProvider;
-use App\Console\Commands\RepositoryGenerator;
+use Namdhgc\Admin\RepositoryGenerator;
 
 class AdminServiceProvider extends ServiceProvider
 {
